@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Share+Tech+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+p {
+  font-size: 1.5em;
+}
+img {
+  width: 100%;
+}
+h1 {
+  margin: 0;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 5em;
+}
+#index {
+  min-height: 100vh;
+}
+
+#index-img {
+  position: relative;
+  min-height: 100vh;
+}
+#index-img img {
+  position: absolute;
+  width: 90%;
+  bottom: 3em;
+}
+
+#index-text {
+  padding: 10em;
+}
+#display-img {
+  width: 50%;
+  padding: 1em;
+  border-radius: 50%;
+}
+#success-img {
+  width: 30%;
+}
+#sync-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

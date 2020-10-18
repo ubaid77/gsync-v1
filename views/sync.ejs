@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <% if (success) { %>
+  <div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Sync Started!</strong>
+  </div>
+  <%}%>
+  <div class="container" id="sync-top">
+    <h3 class="text-center" style="color: #3f3d56">
+      Your folder is under our watch!
+    </h3>
+    <img src="/images/loader.svg" style="width: 30%" alt="" />
+  </div>
+  <p class="text-muted text-center">
+    Try adding, removing or updating a file in the local directory <br />
+    Note: it may take a few seconds for the changes to be reflected in the
+    drive. Be Patient :)
+  </p>
+  <div class="text-center">
+    <a
+      href="/stop"
+      class="btn btn-secondary"
+      style="background-color: #3f3d56; color: white"
+    >
+      Stop Syncing
+    </a>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>
