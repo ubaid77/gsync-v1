@@ -156,7 +156,7 @@ function createRemoteBaseHierarchy(parentId, callback) {
             return;
           }
 
-          if (response.data.items.length === 1 || response.items.length === 1) {
+          if (response.data.items.length === 1) {
             // folder segment already exists, keep going down...
 
             var folderId = response.data.items[0].id;
